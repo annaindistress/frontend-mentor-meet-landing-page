@@ -1,0 +1,41 @@
+.button {
+    display: inline-block;
+    padding: 16px 29px;
+    font-weight: 900;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    background-color: @color-secondary-dark;
+    border-radius: 29px;
+
+    &:hover,
+    &:focus {
+        background-color: @color-secondary-hover;
+    }
+
+    &--green {
+        background-color: @color-primary-dark;
+
+        &:hover,
+        &:focus {
+            background-color: @color-primary-hover;
+        }
+    }
+
+    &--download {
+        min-width: 193px;
+    }
+
+    &--about {
+        min-width: 139px;
+    }
+
+    &__app-version {
+        margin-left: 4px;
+        color: @color-secondary-light;
+
+        .button--green & {
+            color: @color-primary-light;
+        }
+    }
+}

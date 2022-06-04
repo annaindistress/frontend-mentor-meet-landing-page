@@ -1,0 +1,39 @@
+.section {
+    position: relative;
+
+    &::before,
+    &::after {
+        position: absolute;
+        left: 50%;
+        display: block;
+        transform: translate(-50%);
+    }
+
+    &::before {
+        content: '';
+        top: 0;
+        width: 1px;
+        height: 84px;
+        background-color: @color-base-grey;
+    }
+
+    &::after {
+        content: '01';
+        top: 84px;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 56px;
+        height: 56px;
+        background-color: @color-base-white;
+        border: 1px solid @color-base-grey;
+        border-radius: 50%;
+    }
+
+    &:last-of-type {
+        &::after {
+            content: '02';
+        }
+    }
+}
