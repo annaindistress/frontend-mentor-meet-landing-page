@@ -23,11 +23,23 @@ Users should be able to:
 
 ### Screenshot
 
+![](./screenshot.png)
+
 ### Links
+
+- [Solution URL](https://github.com/annaindistress/frontend-mentor-meet-landing-page)
+- [Live Site URL](https://annaindistress.github.io/frontend-mentor-meet-landing-page/)
 
 ## My process
 
 ### Built with
+
+- Semantic HTML5 markup
+- CSS custom properties
+- Flexbox
+- Mobile-first workflow
+- Gulp
+- Less
 
 ## Author
 
