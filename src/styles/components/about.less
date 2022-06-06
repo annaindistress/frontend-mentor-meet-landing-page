@@ -13,6 +13,7 @@
 
     &__image {
         width: calc(50% - 12px);
+        height: auto;
         border-radius: 8px;
         object-fit: cover;
         object-position: center;
@@ -85,6 +86,28 @@
 
         &__text {
             max-width: 575px;
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .about {
+        max-width: 1110px;
+        margin-bottom: 72px;
+        padding-top: 204px;
+
+        &__figure {
+            margin-bottom: 80px;
+        }
+
+        &__image {
+            width: 255px;
+        }
+
+        &__text {
+            max-width: 525px;
+            font-size: 18px;
+            line-height: 1.44;
         }
     }
 }
